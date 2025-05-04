@@ -6,7 +6,9 @@ export default function Layout() {
     return  (
         <>
             <Header />
-            <Outlet />
+            <main style={{ flex: 1}}> {/* To not create a css file */}
+                <Outlet />
+            </main>
             <Footer />
         </>
     )

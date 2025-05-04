@@ -1,0 +1,5 @@
+.container-home{
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Making it visible */
+}
