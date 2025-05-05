@@ -7,6 +7,7 @@ export default function Home() {
             className="container-home"
             style={{ backgroundImage: `url(${backgroundImage})`}}    
         >
+            <h1 className="title-home">Welcome to EatALot</h1>
 
         </div>
     )

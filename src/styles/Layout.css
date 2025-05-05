@@ -1,0 +1,12 @@
+.layout-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* No scroll for the layout itself */
+}
+
+.content-area{
+    flex: 1;
+    overflow-y: auto; /* This will make the scroll only in this part */
+    overflow-x: hidden;
+}
