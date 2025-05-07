@@ -5,6 +5,7 @@
     margin: 0 auto;
     padding: 1rem;
     width: 1000px;
+    justify-items:center;
 }
 
 .container-card{
