@@ -1,0 +1,25 @@
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    color: black;
+    height: 500px;
+    width: 800px;
+    border-radius: 50px;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

@@ -10,7 +10,7 @@ export default [
         id: 1,
         name: "Tiramisu",
         description:
-            "This is a tiramisu",
+            "This is a tiramisu, everybody likes it.",
         price: 7,
         quantity: 1,
         image: tiramisu,
@@ -19,7 +19,7 @@ export default [
         id: 2,
         name: "Croissant",
         description:
-            "This a french croissant",
+            "This a french croissant, stuffed with pistacchios is perfect.",
         price: 3,
         quantity: 1,
         image: croissant,
@@ -28,7 +28,7 @@ export default [
         id: 3,
         name: "Macaron",
         description:
-            "This a macaron, the flavor is a surprise",
+            "This a macaron, the flavor is a surprise.",
         price: 1,
         quantity: 1,
         image: macaron,
@@ -37,7 +37,7 @@ export default [
         id: 4,
         name: "Baguette",
         description:
-            "This a baguette, from my Expedition 33",
+            "This a baguette, from my Expedition 33.",
         price: 1,
         quantity: 1,
         image: baguette,
@@ -46,7 +46,7 @@ export default [
         id: 5,
         name: "Pastel de Nata",
         description:
-            "This is a Pastel De Nata, only 1!",
+            "This is a Pastel De Nata, best pastry 2024, only 1!",
         price: 1,
         quantity: 1,
         image: pastelDeNata,

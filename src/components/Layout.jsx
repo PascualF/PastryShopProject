@@ -2,16 +2,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
 import "../styles/Layout.css"
-import { useState } from "react";
 import data from "../data.js"
 
 export default function Layout() {
 
-    const [dataProducts, setDataProducts] = useState(data)
-
-    const updateCartInfo = (item) => {
-        console.log(item)
-    }
+    const dataProducts = data
 
     return  (
         <div className="layout-container">
