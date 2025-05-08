@@ -18,6 +18,44 @@
     max-width: 600px;
 }
 
+.item-price-cart{
+    margin-left: 10px;
+}
+
+.checkout-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-price > button{
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(235, 246, 246);
+    color: black;
+}
+
+.checkout-price > p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.empty-container{
+    margin-top: 150px;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-container > p {
+    margin-bottom: 0px;
+}
+
 .product-cart-card > p{
     margin-right: 20px;
 }

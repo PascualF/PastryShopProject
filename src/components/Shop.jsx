@@ -6,7 +6,6 @@ export default function Shop() {
 
     const context = useOutletContext()
     const arrayShop = context.dataProducts
-    console.log(arrayShop[1])
 
     return  (
         <div className="container-shop">
