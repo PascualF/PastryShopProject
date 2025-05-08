@@ -5,7 +5,13 @@ import "../styles/Cart.css"
 export default function Cart() {
 
     const context = useOutletContext()
-    const { cartItems } = context;
+    const { cartItems, removeFromCart } = context;
+
+    const handleDelete = (productId, productQuantity) => {
+        removeFromCart(productId, productQuantity)
+    }
+
+
 
     return  (
         <div className="container-cart">
@@ -21,6 +27,7 @@ export default function Cart() {
                         <input 
                             className="input-quant"
                             type="number"
+                            /* value={item.quantity} */
                             /* onChange={handleChangeInput}
                             value={handleChange} */
                             max={99}
@@ -29,7 +36,12 @@ export default function Cart() {
                             className="higher-quant"
                             /* onClick={buttonAddQuant} */
                         >+</button>
-                        <img className="img-trash-delete" src={trashDelete} alt="img-trash-delete" />
+                        <img 
+                            className="img-trash-delete" 
+                            src={trashDelete} 
+                            alt="img-trash-delete" 
+                            onClick={() => handleDelete(item.id, item.quantity)}
+                        />
                     </div>
                 )
             })}

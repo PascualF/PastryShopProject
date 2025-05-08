@@ -4,6 +4,8 @@ import croissant from "../src/assets/croissant.jpg"
 import macaron from "../src/assets/macaron.jpg"
 import baguette from "../src/assets/baguette.jpg"
 import pastelDeNata from "../src/assets/pastel_de_nata.jpg"
+import meringue from "../src/assets/meringue.jpg"
+import waffle from "../src/assets/waffle.jpg"
 
 export default [
     {
@@ -50,5 +52,23 @@ export default [
         price: 1,
         quantity: 1,
         image: pastelDeNata,
+    },
+    {
+        id: 6,
+        name: "Meringue au Lemon",
+        description:
+            "This is a Meringue au Lemon, also made by french dudes.",
+        price: 4,
+        quantity: 1,
+        image: meringue,
+    },
+    {
+        id: 7,
+        name: "Waffle",
+        description:
+            "This is a Waffle, Belgium got some stuff.",
+        price: 4,
+        quantity: 1,
+        image: waffle,
     }
 ]

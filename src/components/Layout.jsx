@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function Layout() {
 
     const [cartItems, setCartItems] = useState([])
+    const [productsQuant, setProductsQuant] = useState(0)
 
     const dataProducts = data
 
@@ -16,6 +17,7 @@ export default function Layout() {
         setCartItems(prevItems => {
             // this will check, one item at a time, if it exists in the cart, if yes, just adds to the existing quantity.
             const checkExisting = prevItems.find(item => item.id === product.id);
+            setProductsQuant(productsQuant + quantity)
             if (checkExisting) {
                 return prevItems.map(item => 
                     item.id === product.id ? {...item, quantity: item.quantity + quantity}
@@ -28,14 +30,20 @@ export default function Layout() {
     }
 
     // This will remove and ite from the cart.
-    const removeFromCart = (product, quantity) => {
-        console.log(`this is the product ${product}`)
-        console.log(`This is the quant: ${quantity}`)
+    const removeFromCart = (productId, productQuantity) => {
+        setCartItems(prevItems => {
+            setProductsQuant(productsQuant - productQuantity)
+            return prevItems.filter(item => 
+                item.id !== productId
+            )
+        })
     }
 
     return  (
         <div className="layout-container">
-            <Header />
+            <Header 
+                productsQuant={productsQuant}
+            />
             <main className="content-area"> {/* To not create a css file */}
                 <Outlet 
                     context={{
