@@ -29,3 +29,6 @@ git clone https://github.com/PascualF/shopping-cart.git
 cd shopping-cart
 npm install
 npm run dev
+```
+
+---
