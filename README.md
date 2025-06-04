@@ -5,6 +5,12 @@
 
 ---
 
+## 📸 Screenshots
+
+| Home Page | Cart |
+|-----------|------|
+| ![Home](./screenshots/home.png) | ![Cart](./screenshots/cart.png) |
+
 ##Features
   - Add and remove items from the cart
   - Update item quantity directly or with increment/decrement buttons
